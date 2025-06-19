@@ -1,4 +1,4 @@
-/// Macro to convert a [`cdumay_core::Result<T, serde_yaml::Error>`] into a [`Result<T>`]
+/// Macro to convert a [`Result<T, serde_yaml::Error>`] into a [`cdumay_core::Result<T>`]
 #[macro_export]
 macro_rules! convert_yaml_result {
     ($result:expr, $context:expr, $text:expr) => {
